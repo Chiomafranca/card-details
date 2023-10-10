@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.frontcard{
+     background: linear-gradient(164deg, #6348FE 4.74%, #FF834A 2.74%, #610595 88.83%, #47A2FF 4.74%);
+     border-radius: 10px;
+     width: 430px;
+     height: 230px;
+     z-index: 100px;
+}
+
+.backcard{
+    background-image: url(../src/images/back_card.png);
+    width: 430px;
+    height: 230px;
+    border-radius: 10px;
+    z-index: 30px;
+}
+
+/* Cards.css */
+.card-container {
+    background-color: #21092F;
+    width: 100%;
+    min-height: 800px;
+    padding-top: 14px;
+    position: relative;
+
+  }
+  
+  .card-container {
+    width: 30%;
+    background-color: #21092F;
+  
+   
+    @media (max-width: 768px) {
+      background-color: #ffffff; 
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .card-container{
+       width: 100%;
+       background-color: #21092F;
+       display: flex;
+       flex-direction: column-reverse;
+       padding-top: 20rem;
+     
+    }
+
+ .centered-form{
+    max-width: 500px; 
+    padding-left: 1rem; 
+  }
+  .frontcard {
+    position: relative;
+    top: -100px; 
+    right: 7.60rem;
+    width: 400px;
+  }
+
+  .backcard {
+    position: relative;
+    top: -500px;
+    right: 13rem;
+    width: 400px;
+  }
+  
+  }
+
+  @media (max-width: 850px),(min-width: 400px) {
+    .thankyou{
+        position: relative;
+        top: -200px;
+        left: 65px;
+        width: 100%;
+      }
+    
+      .form {
+        position: relative;
+        top: -90px;
+        right: -2px;
+        width: 400px; 
+      }
+      
+      .form input {
+        width: 100%; 
+        height: 60px;
+      }   
+  }
+  
+  @media screen and(min-width:400px) {
+    .card-container{
+      width: 150%;
+      background-color: #21092F;
+      display: flex;
+      flex-direction: column-reverse;
+      flex-shrink: inherit;
+   }
+
+  }
+
